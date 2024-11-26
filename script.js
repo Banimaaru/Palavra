@@ -1,8 +1,10 @@
 // Define possible words for the game
-const palavrasPossiveis = ['ABADE', 'ABAFA', 'ABALO', 'ABANO', 'ABAIXO', 'ABATE', 'ABETO', 'ABONA', 'ABRIR', 'ABSOR', 'ACASO', 'ACENA', 'ACENO', 'ACESO', 'ACIDO', 'ACINO', 'ACODE', 'ACORDO', 'ACUME', 'ACUSA', 'ADEGA', 'ADERE', 'ADIAR', 'ADIDO', 'ADIRA', 'ADODO', 'ADUBO', 'AFAGA', 'AFETA', 'AFETO', 'AGIDO', 'AGORA', 'AGRAR', 'AGUAS', 'ALERTA', 'ALGAR', 'ALUDE', 'ALUNA', 'AMADA', 'AMAGO', 'AMANTE', 'AMARA', 'AMARO', 'AMBAS', 'AMENO', 'AMIGO', 'AMORA', 'AMPLO', 'ANDAR', 'ANELA', 'ANEXO', 'ANIMO', 'ANOTA', 'ANTEM', 'ANTES', 'ABRIU', 'AREIA', 'ARGUA', 'AROMA', 'ARROZ', 'ASILO', 'ASNOA', 'ASSAM', 'ASSIM', 'ATEIA', 'ATERO', 'ATENDE', 'ATORO', 'AUGAS', 'AURUM', 'AVISO', 'AZEDA', 'AZERA', 'AZULA', 'BABAM', 'BABA', 'BACIA', 'BAGRE', 'BAIXA', 'BAMBA', 'BANDA', 'BANHA', 'BARBA', 'BARRA', 'BASTA', 'BEATO', 'BEIRA', 'BICHO', 'BIDOS', 'BINDE', 'BOLSA', 'BORRA', 'BOSTA', 'BOTAR', 'BRABA', 'BROTA', 'BUSCA', 'CABRA', 'CAICO', 'CAIRA', 'CAIXA', 'CALAR', 'CANAS', 'CAUSA', 'CELAS', 'CENSO', 'CERTO', 'CESTO', 'CIVIL', 'CLARA', 'CLICA', 'COFRE', 'COISA', 'COROA', 'COSTA', 'CRIME', 'CRIVO', 'DANCA', 'DARIA', 'DADOS', 'DEDAO', 'DESDE', 'DEGRA', 'DEIXA', 'DESEN', 'DIANTE', 'DIGNA', 'DIGNA', 'DOIDO', 'DORES', 'ELEVA', 'EMANA', 'ENANO', 'ENVER', 'ENVIA', 'ENVIA', 'ERETA', 'EXATO', 'EXTRA', 'FAZER', 'FELIX', 'FEBRA', 'FICA', 'FENDA', 'FOFOA', 'FONTE', 'NUKES', 'FREVO', 'GANHA', 'GAULA', 'GRATO', 'GRAVE', 'GRELO', 'GRITA', 'GRIPE', 'GUARD', 'HOJEA', 'IDEAL', 'IGUAL', 'ILESA', 'INSIR', 'JANTA', 'JUNTO', 'LATER', 'LIBRA', 'MALAR', 'MENTA', 'MENTE', 'METAL', 'MIDIA', 'MOITA', 'NADAR', 'NAVAL', 'NEGRA', 'NETOS', 'NUNCA', 'OBESA', 'ODEIA', 'OMITE', 'OPERO', 'OPTAM', 'OSMAR', 'OUTRA', 'OUVIA', 'MANGA', 'PAGAR', 'PARQUE', 'PEITA', 'PENES', 'PERDA', 'PODER', 'POISA', 'RASTA', 'RESTA', 'RITMO', 'ROUBA', 'SALAS', 'SALVA', 'SAMBA', 'SENDO', 'SIMOS', 'SOBRAR', 'SURGE', 'TAIME', 'TERRAS', 'TETOS', 'TESTOS', 'TINTO', 'TONSA', 'TOQUE', 'TRAMA', 'TRIMAR', 'UNIDA', 'VENHA', 'VERDE', 'VETAO', 'VOTOS', 'ZEBRA', 'ZINGO'];
+const palavrasPossiveis = ['SAGAZ', 'ÂMAGO', 'NEGRO', 'TERMO', 'ÊXITO', 'MEXER', 'NOBRE', 'SENSO', 'AFETO', 'ÉTICA', 'ALGOZ', 'PLENA', 'FAZER', 'TÊNUE', 'ASSIM', 'MÚTUA', 'SOBRE', 'VIGOR', 'AQUÉM', 'SUTIL', 'SEÇÃO', 'PODER', 'PORÉM', 'FOSSE', 'SANAR', 'IDEIA', 'CERNE', 'AUDAZ', 'MORAL', 'INATO', 'DESDE', 'MUITO', 'QUIÇÁ', 'JUSTO', 'HONRA', 'SONHO', 'TORPE', 'RAZÃO', 'AMIGO', 'ÍCONE', 'ETNIA', 'FÚTIL', 'ÉGIDE', 'ANEXO', 'TANGE', 'DENGO', 'HAVER', 'LAPSO', 'EXPOR', 'ENTÃO', 'TEMPO', 'BOÇAL', 'SEARA', 'MÚTUO', 'HÁBIL', 'CASAL', 'SABER', 'ÁVIDO', 'ARDIL', 'GRAÇA', 'PESAR', 'DIZER', 'ÓBICE', 'CAUSA', 'XIBIU', 'DEVER', 'ESTAR', 'SENDO', 'TENAZ', 'BRADO', 'COSER', 'PÁRIA', 'GENRO', 'AINDA', 'CRIVO', 'POSSE', 'TEMOR', 'COMUM', 'PROLE', 'ÁPICE', 'ÂNIMO', 'CORJA', 'DETÉM', 'ASSAZ', 'CEDER', 'PAUTA', 'ÂNSIA', 'FUGAZ', 'CENSO', 'CULTO', 'DIGNO', 'ATROZ', 'MUNDO', 'FORTE', 'GLEBA', 'VULGO', 'VÍCIO', 'MESMO', 'COZER', 'CRIAR', 'SAÚDE', 'VALHA', 'REVÉS', 'DENSO', 'TODOS', 'PUDOR', 'JEITO', 'NENÉM', 'DOGMA', 'LOUCO', 'REGRA', 'ATRÁS', 'ORDEM', 'CLAVA', 'MERCÊ', 'HOMEM', 'FELIZ', 'PEDIR', 'IMPOR', 'BANAL', 'LIMBO', 'ROUND', 'USURA', 'COISA', 'JUÍZO', 'SÁBIO', 'FORMA', 'AJUDA', 'APRAZ', 'SERVO', 'PROSA', 'FALAR', 'LEGAL', 'TENRO', 'PRESA', 'CERTO', 'DESSE', 'PÍFIO', 'POSSO', 'CUNHO', 'VENDO', 'VIRIL', 'ONTEM', 'DEVIR', 'FALSO', 'HERÓI', 'MANSO', 'FÁCIL', 'VALOR', 'VISAR', 'MEIGA', 'REAÇA', 'PUDER', 'SÉRIO', 'MÁGOA', 'ÉBRIO', 'ACASO', 'LINDA', 'FLUIR', 'GUISA', 'AFAGO', 'PLATÔ', 'LUGAR', 'ÍMPIO', 'TEMER', 'GARBO', 'ABRIR', 'PRAXE', 'OBTER', 'AFINS', 'GERAR', 'ÓBVIO', 'BURRO', 'UNIÃO', 'MATIZ', 'CISMA', 'BRUMA', 'PLENO', 'CRISE', 'ÊXODO', 'VÊNIA', 'FLUXO', 'TÉDIO', 'HAVIA', 'SENIL', 'RITMO', 'MORTE', 'LEVAR', 'ENFIM', 'ÁLIBI', 'OLHAR', 'TOMAR', 'VISÃO', 'CASTA', 'GÊNIO', 'PRUMO', 'BREGA', 'PARVO', 'VITAL', 'BRAVO', 'FAVOR', 'OUVIR', 'RELES', 'CABAL', 'FALTA', 'PULHA', 'PARCO', 'CALMA', 'VIVAZ', 'RETER', 'TECER', 'OUTRO', 'SÁBIA', 'VALIA', 'TERRA', 'TENDO', 'AMENO', 'VIVER', 'LAICO', 'GRATO', 'PASSO', 'FORÇA', 'NOÇÃO', 'ÚNICO', 'POSSA', 'CARMA', 'ACHAR', 'NICHO', 'RANÇO', 'POBRE', 'REVER', 'NOITE', 'PAPEL', 'FAÇAM', 'ROGAR', 'PRIME', 'FARSA', 'FARDO', 'ATIVO', 'FATOR', 'NOSSA', 'DÚBIO', 'ÓBITO', 'COESO', 'SELAR', 'ÉPICO', 'ANELO', 'CLARO', 'CITAR', 'SINTO', 'LEIGO', 'SESTA', 'LÍDER', 'CISÃO', 'CESTA', 'SONSO', 'CIÚME', 'DETER', 'VELHO', 'ATUAR', 'ADIAR', 'HASTE', 'TENDE', 'GENTE', 'HUMOR', 'REVEL', 'SULCO', 'VAZIO', 'FICAR', 'IDEAL', 'VEMOS', 'ÁRDUO', 'FONTE', 'MARCO', 'PONTO', 'IGUAL', 'EXATO', 'LABOR', 'FEIXE', 'AMPLO', 'TERNO', 'LAVRA', 'REMIR', 'SENÃO', 'CAUDA', 'HIATO', 'DÉBIL', 'CAPAZ', 'TANTO', 'ÓTICA', 'GESTO', 'RELVA', 'INATA', 'AMBOS', 'VARÃO', 'JOVEM', 'CICLO', 'IMUNE', 'TENRA', 'TOADA', 'VÁCUO', 'SONSA', 'COÇAR', 'RAIVA', 'APOIO', 'CHUVA', 'CAÇAR', 'POUCO', 'VIMOS', 'VELAR', 'SÉRIE', 'ALGUM', 'XEQUE', 'FARÃO', 'HORDA', 'FEITO', 'FUSÃO', 'LEITO', 'ADVÉM', 'ENTRE', 'COESA', 'SENTE', 'PROBO', 'DOIDO', 'CARRO', 'MINHA', 'CRUEL', 'FRASE', 'TRAMA', 'ANUIR', 'TORÇO', 'BRISA', 'VERSO', 'ÍMPAR', 'LAZER', 'RIGOR', 'CHATA', 'BOTAR', 'MASSA', 'SORTE', 'BLASÉ', 'PRECE', 'MAIOR', 'PEGAR', 'DORSO', 'SIGNO', 'SEITA', 'FAUNA', 'MOÇÃO', 'PRESO', 'COVIL', 'FUROR', 'CREDO', 'LIVRO', 'MORAR', 'FLORA', 'CASTO', 'VETOR', 'ADEUS', 'LIAME', 'COMER', 'PLANO', 'DÓCIL', 'PESTE', 'SENDA', 'FAINA', 'PRAIA', 'OCASO', 'NUNCA', 'SAIBA', 'AMBAS', 'PECHA', 'HOUVE', 'ALIÁS', 'ÁRIDO', 'AGORA', 'SETOR', 'MANHA', 'PEIXE', 'ARDOR', 'VÍRUS', 'MUDAR', 'VISSE', 'MESES', 'ÁUREA', 'PARTE', 'SALVO', 'REZAR', 'ANTRO', 'BEATA', 'VULTO', 'ACESO', 'VASTO', 'PAJEM', 'BREVE', 'SAÍDA', 'RISCO', 'MORRO', 'JUNTO', 'CAMPO', 'ÓTIMO', 'BANZO', 'AVARO', 'REGER', 'GRUPO', 'SINAL', 'PRADO', 'ANAIS', 'ESTÃO', 'ÁUREO', 'LENDA', 'ANDAR', 'ANTES', 'SEGUE', 'BIRRA', 'SERÃO', 'OPÇÃO', 'ACIMA', 'MOTIM', 'CHULO', 'FUGIR', 'CONTA', 'LEITE', 'RAPAZ', 'OXALÁ', 'VILÃO', 'BRAVA', 'NAÇÃO', 'VERBO', 'FRUIR', 'TRETA', 'ÁTOMO', 'FESTA', 'PARAR', 'TEXTO', 'TIRAR', 'ÍDOLO', 'FITAR', 'ÍNDIO', 'JAZIA', 'TENSO', 'REINO', 'TRAGA', 'PUXAR', 'PRAZO', 'GERIR', 'ALUDE', 'NORMA', 'TOSCO', 'EXAME', 'ÁTRIO', 'FILHO', 'PROVA', 'ÉPOCA', 'TURBA', 'BANDO', 'CORPO', 'MALTA', 'PRETO', 'ARCAR', 'CHEIO', 'ACESA', 'AONDE', 'VORAZ', 'SARÇA', 'PSICO', 'ANCIÃ', 'MANHÃ', 'SINHÁ', 'AVIÃO', 'FATOS', 'FATAL', 'QUASE', 'CÓPIA', 'LIGAR', 'VENAL', 'CERTA', 'NOSSO', 'BÔNUS', 'LOGRO', 'QUOTA', 'MAGIA', 'DESSA', 'FIXAR', 'NÍVEL', 'APEGO', 'AFORA', 'OÁSIS', 'LONGE', 'COITO', 'MENTE', 'POMPA', 'SUMIR', 'MESSE', 'NÓDOA', 'SOLDO', 'TOCAR', 'ALADO', 'PERDA', 'LIDAR'];
+
+;
 
 // Select a random word from the possible words
-const palavraSecreta = palavrasPossiveis[Math.floor(Math.random() * palavrasPossiveis.length)].toUpperCase();
+let palavraSecreta = escolherNovaPalavra();
 
 // Define game constants
 const maxTentativas = 6;
@@ -26,6 +28,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+// Function to select a new random word
+function escolherNovaPalavra() {
+  return palavrasPossiveis[Math.floor(Math.random() * palavrasPossiveis.length)].toUpperCase();
+}
 
 // Create game board
 function criarTabuleiro() {
@@ -122,8 +129,11 @@ function fimDeJogo(ganhou) {
   alert(mensagem);
   if (ganhou) {
     addVisualEffects();
+    palavraSecreta = escolherNovaPalavra(); // Select a new word for the next game
+    resetarJogo();
+  } else {
+    resetarJogo();
   }
-  resetarJogo();
 }
 
 // Reset game
@@ -147,3 +157,4 @@ function addVisualEffects() {
     });
   }, 500);
 }
+
